@@ -9,7 +9,7 @@ body{
 }
 .menucard{
     width: 600px;
-    height: 600px;
+    height: 650px;
     background-color:white;
     border-radius: 12px;
     border: 2px solid black;
@@ -19,9 +19,17 @@ body{
     font-size: 20px;
     margin-top: 60px;
     margin-left: 30px;
+    color: black;
 }
 .menucard h1{
     margin-left: 170px;
+}
+.menucard button{
+     width: 200px;
+    height: 40px;
+    margin-left: 200px;
+    gap: -20px;
+    background-color: cadetblue;
 }
 .question{
     background-color: white;
@@ -35,6 +43,7 @@ body{
 .question p{
     font-size: 22px;
     text-align: center;
+    color: black;
 }
 .question button{
     width: 200px;
@@ -75,3 +84,43 @@ p{
      color: white;
     font-size: 40px;
 }
+.order{
+        background-color: white;
+    height: 200px;
+    width: 500px;
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+    margin-top: 200px;
+}
+.order button{
+    width: 200px;
+    height: 40px;
+    margin-left:0px;
+    gap: -20px;
+    background-color: cadetblue;
+    margin-top: 20px;
+}
+.order input{
+    width: 450px;
+    height: 30px;
+
+}
+ .order-box {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #f9fff9;
+            display: none;
+        }
+.order-box p{
+    color: black;
+    font-size: 30px;
+}  
+#btn{
+    width: 200px;
+    height: 40px;
+    margin-left:250px;
+    background-color: cadetblue;
+    margin-top: 20px;
+}      

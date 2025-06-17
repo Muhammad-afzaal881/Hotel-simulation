@@ -5,38 +5,43 @@
     </head>
     <body>
         <div class="header">
-            <div class="landing_page">
+            <div class="landing_page" id="landing_page">
                 <p>Lovely hotel</p>
                 <h1>A Best Place Enjoy Your Life</h1>
                 <button onclick="main()">Enter Hotel</button>
             </div>
-             <div class="main" style="display: none;">
+             <div class="main" id="main" style="display: none;">
             <div class="question" id="q1" >
                 <p>Good evening! Would you like to start with a drink?</p>
-                <button>Yes, I’d like a drink.</button>
-                <button>No, thank you.</button>
+                <button onclick="like()">Yes, I’d like a drink.</button>
+                <button onclick="notlike()">No, thank you.</button>
          </div>
           <div class="question" id="q2" style="display: none;">
                 <p>Great! Would you prefer:</p>
-                <button> A soft drink</button>
-                <button>A cocktail</button>
+                <button onclick="soft()"> A soft drink</button>
+                <button onclick="hard()">A cocktail</button>
          </div>
-         <div class="question" id="q3" style="display: none;">
+          <div class="question" id="q3" style="display: none;">
+                <p>Great! Would you prefer:</p>
+                <button onclick="sprite()">Sprite</button>
+                <button onclick="sprite()">Fanta</button>
+         </div>
+         <div class="question" id="q4" style="display: none;">
                 <p>Great choice! We have cola, lemonade, and iced tea. Which one would you like?</p>
-                <button>Cola</button>
-                <button> Lemonade</button>
-         </div>
-          <div class="question" id="q4" style="display: none;">
-                <p>No problem! Are you ready to order your meal?</p>
-                <button> Hear about today’s specials?</button>
-                <button id="menucard">"Yes, please bring the menu.</button>
+                <button onclick="sprite()" >Cola</button>
+                <button onclick="sprite()"> Lemonade</button>
          </div>
           <div class="question" id="q5" style="display: none;">
+                <p>No problem! Are you ready to order your meal?</p>
+                <button onclick="special()"> Hear about today’s specials?</button>
+                <button onclick="menucard()">"Yes, please bring the menu.</button>
+         </div>
+          <div class="question" id="q6" style="display: none;">
                 <p>Here is our menu for today. Would you like to:</p>
-                <button>Yes, I’m ready.</button>
+                <button onclick="menucard()">Yes, I’m ready.</button>
                 <button>I need a few more minutes.</button>
          </div>
-         <div class="question" id="q6" style="height: 80px; display: none">
+         <div class="question" id="q7" style="height: 80px; display: none">
                 <p>Sir, may I kindly request you to wait for a moment?"</p>
                 
          </div>
@@ -60,8 +65,18 @@
             1️⃣1️⃣ Cocktails – Mojito, Margarita, Pina Colada<br>
             1️⃣2️⃣ Mineral Water – Still or sparkling<br>
             </p>
-         </div>   
-        </div>
-        </div>
+            <button onclick="order()">Order</button>
+         </div>
+         <div class="order" id="order">
+            <h1>Enter your order</h1>
+            <input type="text" placeholder="enter order" id="input">
+            <button onclick="orderpass()">Confirm order</button>
+         </div>
+          <div class="order-box" id="orderBox">
+        <h2>Order Summary</h2>
+        <p id="orderDetails"></p>
+    </div>
+    <button onclick="pay()" style="display: none;" id="btn">Payment</button>
+        <script src="index.js"></script>
     </body>
 </html>
